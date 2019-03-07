@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Construction and personal home design.">
-    <meta name="keywords" content="construction, house, home, design">
+    <meta name="description" content="Carlos Espinoza personal website.">
+    <meta name="keywords" content="computer, science, tennis, dancing">
     <meta name="author" content="Carlos Espinoza">
     <title>Carlos Espinoza | Gallery</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -26,53 +26,38 @@
       </div>
     </header>
 
+
     <div class="row">
 
   <div class="column">
+    <!-- All my images that are set with custom sizes depending on the picture -->
     <img src="./img/boat.jpg" width="200" height="200">
-    <img src="./img/classy.jpg" width="200" height="200">
+    <!-- <img src="./img/classy.jpg" width="200" height="200">
     <img src="./img/Js.jpg" width="200" height="200">
     <img src="./img/kyrie.png" width="300" height="250">
-    <img src="./img/stache.jpg" width="200" height="200">
+    <img src="./img/stache.jpg" width="200" height="200"> -->
     <img src="./img/baller.jpg" width="200" height="200">
-    <img src="./img/rideOrDie.jpg" width="200" height="200">
+    <!-- <img src="./img/rideOrDie.jpg" width="200" height="200"> -->
     <img src="./img/suit.jpg" width="200" height="400">
-  </div>
 
   </div>
+  <!-- Creating a box that will hold my javascript for a butotn change -->
+  <aside id="sidebar">
+    <div class="border">
+     <form class="quote">
+       <h1 id="demo">This button is dangerous.</h1>
+       <!-- Creating a button that will do something once pressed such as just changing the text inside the box. -->
+       <!-- Dont worry, your computer wont explote -->
 
-  <button class="button_2" onclick="one()">1</button>
-  <button class="button_2" onclick="two()">2</button>
-  <button class="button_2" onclick="four()">4</button>
+       <button type="button" class="button_1" onclick="buttonFunc()">Don't click me!</button>
+       <!-- Creating the script so the onclick can call the function within the javascript file. -->
+       <script src="./javaScript/buttonScript.js"></script>
 
-  <script>
-  // Get the elements with class="column"
-  var elements = document.getElementsByClassName("column");
-
-  // Declare a "loop" variable
-  var i;
-
-  // Full-width images
-  function one() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "100%";
-  }
-  }
-
-  // Two images side by side
-  function two() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "50%";
-  }
-  }
-
-  // Four images side by side
-  function four() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.flex = "25%";
-  }
-  }
-  </script>
+       </script>
+       </form>
+      </div>
+  </aside>
+</div>
 
 <footer>
   <p>Carlos Espinoza Website &copy; 2018</p>
